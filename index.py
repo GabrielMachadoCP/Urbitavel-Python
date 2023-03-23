@@ -1,9 +1,4 @@
+print("Bem-vindo a plataforma de descarte da Urbitável. Você deseja fazer o seu login?")
+resposta = input()
 
-print("alo alo")
-print("Bianca na área")
-
-
-print("aq é a ana")
-
-
-
+if resposta == ("Sim") :
