@@ -11,7 +11,5 @@ INTEGRANTES DO GRUPO:
 5. Quim Isluv
 
 DESCRIÇÃO DAS IMPLEMENTAÇÕES DO PROJETO:
--> Utilização da linguaguem Python com a função input() para armazenar informaçãoes do cliente, como:
-usuário e senha.
--> Retornar as credenciais de acesso (usuário e senha) através do print().
--> Criação do recibo.
+-> Criação de um sistema de armazenamento de credenciais para efetuar um cadastro e um login na plataforma.
+-> Criação de uma interface de decisões.

@@ -24,6 +24,15 @@ else:
                 print("senha incorreta, digite novamente")
             else:
                 print("Login feito. Seja bem vindo,", usuario, "!")
+print("o que deseja fazer em nossa plataforma? REALIZAR SAQUE | FALE CONOSCO | SOBRE NÓS")
+decisãoUsuario = input()
+
+if decisãoUsuario == "realizar saque":
+    print("saque realizado.")
+elif decisãoUsuario == "fale conosco":
+    print("mande um email para o nosso suporte. O nosso email é urbitável@atendimento.com.br")
+elif decisãoUsuario == "sobre nós":
+    print("Somos um grupo de estudantes de Engenharia de Software.")
 
 
 
