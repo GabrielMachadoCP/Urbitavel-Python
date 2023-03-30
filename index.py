@@ -29,9 +29,17 @@ else:
 
                 #estrutura menu programa
                 if decisãoUsuario == "realizar saque":
-                    print("Ok! Qual seria a sua forma de realizar o saque, ",usuario,"?" " >>> OPÇÕES: PIX | TRANSAÇÃO BANCÁRIA <<<")
+                    print("Ok! Qual seria a sua forma de realizar o saque,",usuario,"?" " >>> OPÇÕES: PIX | TRANSAÇÃO BANCÁRIA <<<")
                     formadepag = input()
-                    #if formadepag 
+                    if formadepag == "pix":
+                        print("Certo! Registre sua chave PIX e faremos o depósito em até 24h após a solicitaçaõ. Ajudo em algo mais?")
+                    else:
+                        print("Certo! Registre suas credenciais bancárias e faremos o depósito em até 24h após a solicitaçaõ. Ajudo em algo mais?")
+                    respostajuda = input()
+                    if respostajuda == "sim":
+                        print("O que deseja fazer em nossa plataforma?  REALIZAR SAQUE | FALE CONOSCO | SOBRE NÓS | SAIR DA MINHA CONTA")
+                    elif respostajuda == "não":
+                        print("Ok! Programa encerrado.")
                 elif decisãoUsuario == "fale conosco":
                     print("Mande um email para o nosso suporte. O nosso email é urbitável@atendimento.com.br.")
                 elif decisãoUsuario == "sobre nós":
