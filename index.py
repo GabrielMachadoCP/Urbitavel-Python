@@ -29,7 +29,9 @@ else:
 
                 #estrutura menu programa
                 if decisãoUsuario == "realizar saque":
-                    print("Saque realizado.")
+                    print("Ok! Qual seria a sua forma de realizar o saque, ",usuario,"?" " >>> OPÇÕES: PIX | TRANSAÇÃO BANCÁRIA <<<")
+                    formadepag = input()
+                    #if formadepag 
                 elif decisãoUsuario == "fale conosco":
                     print("Mande um email para o nosso suporte. O nosso email é urbitável@atendimento.com.br.")
                 elif decisãoUsuario == "sobre nós":
