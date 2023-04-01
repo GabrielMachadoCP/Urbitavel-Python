@@ -6,7 +6,7 @@ resposta = input()
 if resposta == "não":
     print("Ok! Programa encerrado. ")
 else:
-    print("Digite seu novo usuario.")
+    print("Digite seu novo usuário.")
     usuario = input()
     print(f"Ok! Agora digite sua nova senha, {usuario}.")
     senha = int(input())
