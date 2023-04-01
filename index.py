@@ -28,33 +28,30 @@ else:
                 print("Login feito. Seja bem vindo(a) a sua conta,", usuario,"!")
                 print("O que deseja fazer em nossa plataforma?  REALIZAR SAQUE | FALE CONOSCO | SOBRE NÓS | SAIR DA MINHA CONTA")
                 decisãoUsuario = input()
-
                 #estrutura menu programa
-                pontosAcumulados = random.randint(0,5.000)
-                comprovanteDeDescarte = ""
+                pontosAcumulados = random.randint(10,200)
+                
                 if decisãoUsuario == "realizar saque":
                     print(f"{usuario}, você tem o total de {pontosAcumulados} pontos. Deseja prosseguir a retirada?")
                     respostaRetirada = input()
                     if respostaRetirada == "sim":
-                        print("Ok! Qual seria a sua forma de realizar o saque,>>> OPÇÕES: PIX | TRANSAÇÃO BANCÁRIA <<<")
+                        print("Ok! Qual seria a sua forma de realizar o saque ||| OPÇÕES: PIX/TRANSAÇÃO BANCÁRIA |||")
                     else:
-                        print(f"Ok! Programa encerrado. Até mais, {usuario}")
+                        print(f"Ok! Programa encerrado. Até mais, {usuario}.")
                     formadepag = input()
                     if formadepag == "pix":
-                        print("Certo! Registre sua chave PIX e faremos o depósito em até 24h após a solicitação. Ajudo em algo mais?")
+                        print("Certo! Registre sua chave PIX e faremos o depósito em até 24h após a solicitação.")
                     else:
-                        print("Certo! Registre suas credenciais bancárias e faremos o depósito em até 24h após a solicitaçaõ. Ajudo em algo mais?")
-                    respostajuda = input()
-                    if respostajuda == "sim":
-                        print("O que deseja fazer em nossa plataforma?  REALIZAR SAQUE | FALE CONOSCO | SOBRE NÓS | SAIR DA MINHA CONTA")
-                    elif decisãoUsuario == "fale conosco":
-                        print(f"Mande um email para o nosso suporte para que possamos ajudá-lo(a), {usuario}. O nosso email é urbitável@atendimento.com.br.")
-                    elif decisãoUsuario == "sobre nós":
+                        print("Certo! Registre suas credenciais bancárias e faremos o depósito em até 24h após a solicitação.  ")
+                 
+                    
+                if decisãoUsuario == "fale conosco":
+                    print(f"Mande um email para o nosso suporte para que possamos ajudá-lo(a), {usuario}. O nosso email é urbitável@atendimento.com.br.")
+                elif decisãoUsuario == "sobre nós":
                         print("O projeto Urbitável é uma iniciativa coletiva de estudantes da FIAP, que busca apresentar uma solução sustentável, relativa a um dos problemas ambientais mais ocorridos pelo mundo todo: O inadequado descarte dos lixos e substratos prejudiciais ao ambiente em meiosurbanos. Se trata, portanto,de uma ideia interventiva que tem como objetivo recompensar a população urbana por descartar corretamente os seus lixos,através do programa consciente de descarte.")
-                    elif decisãoUsuario == "sair da minha conta":
-                        print(f"Você saiu da sua conta. Até mais, {usuario}!")
-                    else:
-                        print(f"Ok! Programa encerrado. Até mais, {usuario}")
+                elif decisãoUsuario == "sair da minha conta":
+                    print(f"Você saiu da sua conta. Até mais, {usuario}!")
+                
 
                     
                      
