@@ -8,24 +8,24 @@ if resposta == "não":
 else:
     print("Digite seu novo usuario.")
     usuario = input()
-    print(f"Ok! Agora digite sua nova senham, {usuario}.")
+    print(f"Ok! Agora digite sua nova senha, {usuario}.")
     senha = int(input())
     print("Cadastro feito. Deseja fazer o login?")
     respostaLogin = input()
     if respostaLogin == "não":
-        print("Ok! Programa encerrado. ")
+        print(f"Ok! Programa encerrado. Até mais, {usuario}. ")
     else:
         print("Insira o seu usuário anteriormente cadastrado.")
         login = input()
         if login != usuario:
             print("Usuário incorreto. Tente novamente.")
         else:
-            print("Ok! Agora digite sua senha cadastrada.")
+            print("Ok! Agora digite sua senha anteriormente cadastrada.")
             senhaLogin = int(input())
             if senhaLogin != senha:
                 print("Senha incorreta, digite novamente.")
             else:
-                print("Login feito. Seja bem vindo(a),", usuario,"!")
+                print("Login feito. Seja bem vindo(a) a sua conta,", usuario,"!")
                 print("O que deseja fazer em nossa plataforma?  REALIZAR SAQUE | FALE CONOSCO | SOBRE NÓS | SAIR DA MINHA CONTA")
                 decisãoUsuario = input()
 
@@ -43,9 +43,9 @@ else:
                     else:
                         print("Ok! Programa encerrado.")
                 elif decisãoUsuario == "fale conosco":
-                    print("Mande um email para o nosso suporte. O nosso email é urbitável@atendimento.com.br.")
+                    print(f"Mande um email para o nosso suporte para que possamos ajudá-lo(a), {usuario}. O nosso email é urbitável@atendimento.com.br.")
                 elif decisãoUsuario == "sobre nós":
-                    print("Somos um grupo de estudantes de Engenharia de Software.")
+                    print("O projeto Urbitável é uma iniciativa coletiva de estudantes da FIAP, que busca apresentar uma solução sustentável, relativa a um dos problemas ambientais mais ocorridos pelo mundo todo: O inadequado descarte dos lixos e substratos prejudiciais ao ambiente em meiosurbanos. Se trata, portanto,de uma ideia interventiva que tem como o bjetivo recompensar a população urbana por descartar corretamente os seus lixos,através do programa consciente de descarte.")
                 elif decisãoUsuario == "sair da minha conta":
                     print("Você saiu da sua conta. Até mais!")
                      
