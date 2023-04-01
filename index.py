@@ -8,7 +8,7 @@ if resposta == "não":
 else:
     print("Digite seu novo usuario.")
     usuario = input()
-    print("Ok! Agora digite sua nova senha.")
+    print(f"Ok! Agora digite sua nova senham, {usuario}.")
     senha = int(input())
     print("Cadastro feito. Deseja fazer o login?")
     respostaLogin = input()
