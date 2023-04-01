@@ -1,3 +1,5 @@
+
+
 print("Seja bem vindo à plataforma de descarte da Urbitável. Deseja fazer o seu cadastro?")
 resposta = input()
 
@@ -13,7 +15,7 @@ else:
     if respostaLogin == "não":
         print("Ok! Programa encerrado. ")
     else:
-        print("Insira seu usuario cadastrado.")
+        print("Insira o seu usuário anteriormente cadastrado.")
         login = input()
         if login != usuario:
             print("Usuário incorreto. Tente novamente.")
@@ -23,7 +25,7 @@ else:
             if senhaLogin != senha:
                 print("Senha incorreta, digite novamente.")
             else:
-                print("Login feito. Seja bem vindo,", usuario,"!")
+                print("Login feito. Seja bem vindo(a),", usuario,"!")
                 print("O que deseja fazer em nossa plataforma?  REALIZAR SAQUE | FALE CONOSCO | SOBRE NÓS | SAIR DA MINHA CONTA")
                 decisãoUsuario = input()
 
@@ -32,13 +34,13 @@ else:
                     print("Ok! Qual seria a sua forma de realizar o saque,",usuario,"?" " >>> OPÇÕES: PIX | TRANSAÇÃO BANCÁRIA <<<")
                     formadepag = input()
                     if formadepag == "pix":
-                        print("Certo! Registre sua chave PIX e faremos o depósito em até 24h após a solicitaçaõ. Ajudo em algo mais?")
+                        print("Certo! Registre sua chave PIX e faremos o depósito em até 24h após a solicitação. Ajudo em algo mais?")
                     else:
                         print("Certo! Registre suas credenciais bancárias e faremos o depósito em até 24h após a solicitaçaõ. Ajudo em algo mais?")
                     respostajuda = input()
                     if respostajuda == "sim":
                         print("O que deseja fazer em nossa plataforma?  REALIZAR SAQUE | FALE CONOSCO | SOBRE NÓS | SAIR DA MINHA CONTA")
-                    elif respostajuda == "não":
+                    else:
                         print("Ok! Programa encerrado.")
                 elif decisãoUsuario == "fale conosco":
                     print("Mande um email para o nosso suporte. O nosso email é urbitável@atendimento.com.br.")
