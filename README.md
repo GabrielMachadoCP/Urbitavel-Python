@@ -11,5 +11,6 @@ INTEGRANTES DO GRUPO:
 5. Quim Rossatti Baroni -				RM99647
 
 DESCRIÇÃO DAS IMPLEMENTAÇÕES DO PROJETO:
--> Criação de um sistema de armazenamento de credenciais para efetuar um cadastro e um login na plataforma de descarte de lixo.
--> Criação de uma interface de decisões.
+-> Criação de um sistema de armazenamento de credenciais para efetuar primiramente um cadastro e posteriorment, um login na plataforma de descarte de lixo.
+-> Criação de uma interface de decisões oportunas ao usuário da plataforma.
+-> Criação da ferramenta de solução principal (recompensa pelo descarte.)
