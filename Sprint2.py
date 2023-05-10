@@ -69,26 +69,26 @@ try:
                     print("Deseja fazer alguma ação?\n| SOBRE NÓS | SAIR") 
                     decisãoUsuario = input()
                     if decisãoUsuario.lower() == "sair":
-                        print(f"\nObrigado por visitar nosso programa {usuario}, você possui {pontosAcumulados} pontos.\nVolte Sempre!")
+                        print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
                     elif decisãoUsuario.lower() == "sobre nós":
                         print("\nO projeto Urbitável é uma iniciativa coletiva de estudantes da FIAP, que busca apresentar uma solução sustentável, relativa a um dos problemas ambientais mais ocorridos pelo mundo todo: O inadequado descarte dos lixos e substratos prejudiciais ao ambiente em meiosurbanos. Se trata, portanto,de uma ideia interventiva que tem como objetivo recompensar a população urbana por descartar corretamente os seus lixos,através do programa consciente de descarte.\n")
                         print("Deseja fazer alguma ação?\n| SAIR |") 
                         decisãoUsuario = input()
                         if decisãoUsuario.lower() == "sair":
-                            print(f"\nObrigado por visitar nosso programa {usuario}, você possui {pontosAcumulados} pontos.\nVolte Sempre!")
+                            print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
              
                 elif decisãoUsuario.lower() == "sobre nós":
                     print("\nO projeto Urbitável é uma iniciativa coletiva de estudantes da FIAP, que busca apresentar uma solução sustentável, relativa a um dos problemas ambientais mais ocorridos pelo mundo todo: O inadequado descarte dos lixos e substratos prejudiciais ao ambiente em meiosurbanos. Se trata, portanto,de uma ideia interventiva que tem como objetivo recompensar a população urbana por descartar corretamente os seus lixos,através do programa consciente de descarte.\n")
                     print("Deseja fazer alguma ação?\n| FALE CONOSCO | SAIR") 
                     decisãoUsuario = input()
                     if decisãoUsuario.lower() == "sair":
-                        print(f"\nObrigado por visitar nosso programa {usuario}, você possui {pontosAcumulados} pontos.\nVolte Sempre!")
+                        print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
                     elif decisãoUsuario.lower() == "fale conosco":
                         print(f"\nMande um email para o nosso suporte para que possamos ajudá-lo(a), {usuario}. O nosso email é urbitável@atendimento.com.br.\n")
                         print("Deseja fazer alguma ação?\n| SAIR |") 
                         decisãoUsuario = input()
                         if decisãoUsuario.lower() == "sair":
-                            print(f"\nObrigado por visitar nosso programa {usuario}, você possui {pontosAcumulados} pontos.\nVolte Sempre!")
+                           print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
                 
                 elif decisãoUsuario.lower() == "sair":
                     print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
