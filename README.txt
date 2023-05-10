@@ -6,7 +6,7 @@ INTEGRANTES DO GRUPO:
 
 1. Ana Laura Juarez Zerlin -			RM98065
 3. Bianca Carvalho Dancs Firsoff	-	RM551645
-3. Gabriel Machado Carrara Pimentel -	RM99880
+3. Gabriel Machado Carrara Pimentel -	  RM99880
 4. Hellen Ramos Gonçalves Assis -		RM98284
 
 DESCRIÇÃO DAS IMPLEMENTAÇÕES DO PROJETO:
