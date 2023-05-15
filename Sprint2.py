@@ -39,58 +39,42 @@ try:
                     senhaLogin = input()
 
                 print("Login feito. Seja bem vindo(a) a sua conta,", usuario,"!")
-                print("Deseja vizualizar seus pontos?")
-                decisãoUsuario = input()
-
+                
                 #estrutura menu programa
                 pontosAcumulados = random.randint(10,200)
                 dinheiro = pontosAcumulados * 1.5
-                if decisãoUsuario.lower() == "sim":
-                    print(f"{usuario}, você tem o total de {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}. Deseja prosseguir com a retirada?")
-                    respostaRetirada = input()
-                    if respostaRetirada.lower() != "sim":
-                        pontosAcumulados = pontosAcumulados
-                    elif respostaRetirada.lower() == "sim":
-                        print("Ok! Qual seria a sua forma de realizar o saque || OPÇÕES: PIX/TRANSAÇÃO BANCÁRIA ||")
-                        pontosAcumulados = 0
-                        formadepag = input()
-                        if formadepag.lower() == "pix":
-                            print("Certo! Registre sua chave PIX e faremos o depósito em até 24h após a solicitação.")
-                            pix = input()
                             
-                        elif formadepag.lower() == "transação bancária":
-                            print("Certo! Registre suas credenciais bancárias e faremos o depósito em até 24h após a solicitação.")
-                            credBan = input()
-                                
-                print("Deseja fazer alguma ação?\nFALE CONOSCO | SOBRE NÓS | SAIR") 
-                decisãoUsuario = input()
-                if decisãoUsuario.lower() == "fale conosco":
-                    print(f"\nMande um email para o nosso suporte para que possamos ajudá-lo(a), {usuario}. O nosso email é urbitável@atendimento.com.br.\n")
-                    print("Deseja fazer alguma ação?\n| SOBRE NÓS | SAIR") 
-                    decisãoUsuario = input()
-                    if decisãoUsuario.lower() == "sair":
-                        print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
-                    elif decisãoUsuario.lower() == "sobre nós":
-                        print("\nO projeto Urbitável é uma iniciativa coletiva de estudantes da FIAP, que busca apresentar uma solução sustentável, relativa a um dos problemas ambientais mais ocorridos pelo mundo todo: O inadequado descarte dos lixos e substratos prejudiciais ao ambiente em meiosurbanos. Se trata, portanto,de uma ideia interventiva que tem como objetivo recompensar a população urbana por descartar corretamente os seus lixos,através do programa consciente de descarte.\n")
-                        print("Deseja fazer alguma ação?\n| SAIR |") 
-                        decisãoUsuario = input()
-                        if decisãoUsuario.lower() == "sair":
-                            print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
-             
-                elif decisãoUsuario.lower() == "sobre nós":
-                    print("\nO projeto Urbitável é uma iniciativa coletiva de estudantes da FIAP, que busca apresentar uma solução sustentável, relativa a um dos problemas ambientais mais ocorridos pelo mundo todo: O inadequado descarte dos lixos e substratos prejudiciais ao ambiente em meiosurbanos. Se trata, portanto,de uma ideia interventiva que tem como objetivo recompensar a população urbana por descartar corretamente os seus lixos,através do programa consciente de descarte.\n")
-                    print("Deseja fazer alguma ação?\n| FALE CONOSCO | SAIR") 
-                    decisãoUsuario = input()
-                    if decisãoUsuario.lower() == "sair":
-                        print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
-                    elif decisãoUsuario.lower() == "fale conosco":
+                print("Qual ação desejar realizar?\nVERIFICAR PONTOS | FALE CONOSCO | SOBRE NÓS | SAIR\n") 
+                acao = input()
+                while acao.lower() != "sair":
+                    #Vendo os pontos e fazendo ou não o saque
+                    if acao.lower() == "verificar pontos":
+                        print(f"{usuario}, você tem o total de {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}. Deseja prosseguir com a retirada?\n")
+                        respostaRetirada = input()
+                        if respostaRetirada.lower() != "sim":
+                            pontosAcumulados = pontosAcumulados
+                        elif respostaRetirada.lower() == "sim":
+                            print("Ok! Qual seria a sua forma de realizar o saque || OPÇÕES: PIX/TRANSAÇÃO BANCÁRIA ||\n")
+                            pontosAcumulados = 0
+                            dinheiro = 0
+                            formadepag = input()
+                            if formadepag.lower() == "pix":
+                                print("Certo! Registre sua chave PIX e faremos o depósito em até 24h após a solicitação.\n")
+                                pix = input()
+                            
+                            elif formadepag.lower() == "transação bancária":
+                                print("Certo! Registre suas credenciais bancárias e faremos o depósito em até 24h após a solicitação.\n")
+                                credBan = input()
+                    #Seção Fale Conosco
+                    elif acao.lower() == "fale conosco":
                         print(f"\nMande um email para o nosso suporte para que possamos ajudá-lo(a), {usuario}. O nosso email é urbitável@atendimento.com.br.\n")
-                        print("Deseja fazer alguma ação?\n| SAIR |") 
-                        decisãoUsuario = input()
-                        if decisãoUsuario.lower() == "sair":
-                           print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
-                
-                elif decisãoUsuario.lower() == "sair":
-                    print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\nUSUÁRIO: {usuario}\tSENHA: {senha}")
+                    #Seção Sobre nós
+                    elif acao.lower() == "sobre nós":
+                        print("\nO projeto Urbitável é uma iniciativa coletiva de estudantes da FIAP, que busca apresentar uma solução sustentável, relativa a um dos problemas ambientais mais ocorridos pelo mundo todo: O inadequado descarte dos lixos e substratos prejudiciais ao ambiente em meiosurbanos. Se trata, portanto,de uma ideia interventiva que tem como objetivo recompensar a população urbana por descartar corretamente os seus lixos,através do programa consciente de descarte.\n")
+                    
+                    print("Qual outra ação deseja realizar?\nVERIFICAR PONTOS | FALE CONOSCO | SOBRE NÓS | SAIR\n") 
+                    acao = input()
+                #Mensagem de resumo e Despedida do usuário
+                print(f"\nObrigado por visitar nosso programa {usuario}!\tVocê possui {pontosAcumulados} pontos, equivalentes a R${dinheiro:.2f}.\nVolte Sempre!\n\nSOBRE A SUA CONTA:\n\nUSUÁRIO: {usuario}\tSENHA: {senha}")
 except ValueError:
     print(erro)
